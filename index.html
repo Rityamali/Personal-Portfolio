@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@800&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0365705c3b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Landing page -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="./images/logo.png" class="logo"> -->
+                <h1>Port<span>folio</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about-sec">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h4>Hello , It's me </h4>
+                <h1><span>Ritesh</span> Mali</h1>
+                <p>And I'm <span>Web Developer</span></p>
+            </div>
+        </div>
+    </div>
+    <!-- About Section -->
+    <div id="about-sec">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/pic1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey, I am graduate Engineer specialized in Electronics and Telecommunication Engineering. I'm a tech enthusiast and desire to learn every technology possible.I am developing problem-solving skills, practicing DSA, and learning Full Stack Web Development.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-end Developement</span><br>Html | Css | JavaScript | React | Bootstrap</li>
+                            <li><span>Back-end Developement</span><br>MongoDB | NodeJS | ExpressJS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>MERN Stack Developement Training at IT Preneur Institute</li>
+                            <li><span>2019-2023</span><br>BTech from Pillai College Of Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sevices -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Website Development</h2>
+                    <p>Creating websites from scratch using programming languages like HTML, CSS, and JavaScript</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-expand"></i>
+                    <h2>Responsive Web Design</h2>
+                    <p>Ensuring websites are mobile-friendly and adapt to various screen sizes and devices</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h2>Full-Stack Development</h2>
+                    <p>Combining front-end and back-end development to build complete web solutions</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work border-me">
+                    <img src="./images/Project-1.png">
+                    <div class="layer">
+                        <h3>Current Weather App</h3>
+                        <p>Created project which gives current updates on weather using html , css and javascript</p>
+                        <a href="https://rityamali.github.io/WeatherProject/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work border-me">
+                    <img src="./images/Project-2.png">
+                    <div class="layer">
+                        <h3>Cricket Academy UI</h3>
+                        <p>Created animating UI for Cricekt academy using html , css and javascript</p>
+                        <a href="https://rityamali.github.io/CricketAcademyUI/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work border-me">
+                    <img src="./images/Project-3.png">
+                    <div class="layer">
+                        <h3>Personal Portfolio</h3>
+                        <p>My personal portfolio website using Html , css and JavaScript</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>riteshmali456@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Rityamali" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ritesh-mali-24b181233/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./images/Ritesh_Mali_CV.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="Email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="3" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2023</p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+
+    <!-- for google form -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxl5sME3FLEqycyCdI9MRoUxsKXadATJaEhBEHqfk4ryyANyZSugoW1XPcijJh3uXO4cg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
